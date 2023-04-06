@@ -1,3 +1,8 @@
+:root{
+    --fontColor: lightblue;
+  }
+
+
 body {
     background-color: black;
 
@@ -29,7 +34,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: lightgreen;
+    color: var(--fontColor);
 }
 
 
@@ -42,7 +47,7 @@ a {
 }
 
 .navbar a {
-    color: white;
+    color: var(--fontColor);
     font-size: 2vw;
 }
 
@@ -85,6 +90,22 @@ a {
 
 .grid-item img {
     width: 100%;
+}
+
+.grid-container-booking {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-around;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 15px;
+}
+.grid-item-booking {
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 footer {
